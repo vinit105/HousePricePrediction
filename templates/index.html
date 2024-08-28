@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Property Input Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS for styling -->
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
+</head>
+<body style="background-color: rgb(112, 117, 112);">
+
+
+  <div class="container" style="background-color:rgb(175, 174, 174);">
+    <div class="form-container">
+
+      <div class="slider-container">
+        <h1 align="center"> House Price Prediction</h1>
+        <div class="slider">
+          <img src="https://th.bing.com/th/id/OIP.0sqLKdvasJViirf1-1npPAHaF7?rs=1&pid=ImgDetMain" alt="Image 1">
+          <img src="https://th.bing.com/th/id/OIP.YMrrhUf1WeUXIGRnrYe2lQHaEj?rs=1&pid=ImgDetMain" alt="Image 2">
+          <img src="https://st.hzcdn.com/simgs/5971ecdd0b4f3bda_9-9599/home-design.jpg" alt="Image 3">
+          <img src="https://images.homify.com/images/a_0,c_fit,q_70,w_1108/v1448274094/p/photo/image/1136860/008_House_of_lines_and_courts/photos-by.jpg" alt="Image 4">
+          <img src="https://th.bing.com/th/id/OIP.kkEpG6CDdZ_u9QzTJX96TgHaEK?rs=1&pid=ImgDetMain" alt="Image 5">
+        </div>
+      </div>
+
+      <h2 class="mb-4" align="center">Property Details</h2>
+      <form id="dataForm" method="POST">
+        <div class="form-group">
+          <label for="area">Area (sqft)</label>
+          <input type="number" class="form-control" id="area" name="area">
+          <div class="error" id="error-area">*This field is required</div>
+        </div>
+        <div class="form-group">
+          <label for="bhk">BHK (Bedrooms)</label>
+          <input type="number" class="form-control" id="bhk" name="bhk">
+          <div class="error" id="error-bhk">*This field is required</div>
+        </div>
+        <div class="form-group">
+          <label for="bathroom">Bathrooms</label>
+          <input type="number" class="form-control" id="bathroom" name="bathroom">
+          <div class="error" id="error-bathroom">*This field is required</div>
+        </div>
+        <div class="form-group">
+          <label for="isFurnished">Is Furnished?</label>
+          <select class="form-control" id="isFurnished" name="isFurnished">
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <div class="error" id="error-isFurnished">*This field is required</div>
+        </div>
+        <div class="form-group">
+          <label for="parking">Number of Parking</label>
+          <input type="number" class="form-control" id="parking" name="parking">
+          <div class="error" id="error-parking">*This field is required</div>
+        </div>
+        <div class="form-group">
+          <label for="isApartment">Is Apartment?</label>
+          <select class="form-control" id="isApartment" name="isApartment">
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <div class="error" id="error-isApartment">*This field is required</div>
+        </div>
+
+        <div id="response" class="container mt-4">
+          <!-- Response will be displayed here -->
+        </div>
+
+        <button type="button" onclick="submitForm()" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./static/script.js"> </script>
+</body>
+</html>

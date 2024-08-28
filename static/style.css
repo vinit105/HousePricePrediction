@@ -1,0 +1,44 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.slider-container {
+  height: 200%;
+  overflow: hidden;
+  position: relative;
+}
+.slider {
+  display: flex;
+  animation: slide 7s infinite;
+}
+.slider img {
+  width: 50%;
+  height: auto;
+  vertical-align: middle;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.error {
+  color: red;
+  font-size: 0.875em;
+  display: none;
+}
+.form-group.error .form-control {
+  border-color: red;
+}
