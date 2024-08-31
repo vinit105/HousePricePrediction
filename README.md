@@ -1,4 +1,4 @@
-# House Price Prediction
+# <font color="violet">House Price Prediction</font>
 
 Welcome to the House Price Prediction project! This project predicts house prices using a Random Forest model implemented in Python. The model is built with the help of various libraries and tools including Scikit-learn, Pandas, NumPy, and more. The project is developed using PyCharm and includes HTML, CSS, and JavaScript files for a web-based user interface.
 
@@ -40,6 +40,16 @@ house-price-prediction(Project)
 │   ├── style.css  
 │   └── script.js  
 └── README.md                   
+
+## Outcomes
+- Mean Absolute Error (MAE): 7296291.85  
+- Mean Squared Error (MSE): 202192022318005.72  
+- Root Mean Squared Error (RMSE): 14219424.12  
+- R² Score: <style>.green{background-color: green;</style><span class="green">0.73</span>  
+- Cross-Validated RMSE: 13088487.70  
+
+![Demo](assets/images/demo.png)
+![Demo](assets/images/outcome.png)
 
 ## ✔️Contributing
 Feel free to contribute to the project by submitting issues or pull requests. Your suggestions and improvements are welcome!
