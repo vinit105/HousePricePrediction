@@ -45,7 +45,7 @@ house-price-prediction(Project)
 - Mean Absolute Error (MAE): 7296291.85  
 - Mean Squared Error (MSE): 202192022318005.72  
 - Root Mean Squared Error (RMSE): 14219424.12  
-- R² Score: <style>.green{background-color: green;</style><span class="green">0.73</span>  
+- R² Score: <span style="background-color:green;">0.73</span>  
 - Cross-Validated RMSE: 13088487.70  
 
 ![Demo](assets/images/demo.png)
